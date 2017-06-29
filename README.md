@@ -9,9 +9,11 @@ My approach was started as gaussian density regression, similar to "Interactive 
 - Input tiles 276x276 have been converted into feature maps 138x138x512 and linearly regressed to Gaussian fields centered on sea lions, class-wise. Every Gaussian is normalized to 1, and integration over activation map gives objects count. Linear models have been added on top of DRN as 1x1 convolitional layers. Initially this stage was intended as final, and it worked just perfect on synthetic data giving under 2% error rate. Unfortunately, it was not so good for sea lions. 
 
 The picture demonstrates 2 problems: a) inter-class mis-classification, esp. adult/sub-adult males, b) reconstructed Gaussians sometimes biased towards body shape, thus overestimating density, phenomenon noticed by other participants as well. The reason could be a sub-optimal Gaussian kernel size. (do not pay attention to border artifacts, it's dilated conv features that has been routinely cropped out)
+![alt tag](Pictures/gaussians_1.png)
 - Gaussian activations, 138x138, 10 feature depth (I used 2 linear models, 5 activations each) have been fed into simplified variation of ResNet-18 with 5 regression outputs, trained for RMSE loss.  
 #
-DRN is computationally very intensive. It's purpose localization, and unlike traditional conv models it does not reduce resolution. To filter empty tiles I trained aux VGG-16 binary classifier.  
+DRN is computationally very intensive. It's purpose localization, and unlike traditional conv models it does not reduce resolution. To filter empty tiles I trained aux VGG-16 binary classifier.
+![alt tag](Pictures/tiles.png)
 #
 There is room for improvement:  
 - I considered U-net too, but opted for DRN to avoid deconvolution. This decision has its pros and contras, and I would give U-net a try if started over.
@@ -20,7 +22,7 @@ There is room for improvement:
 #
 Requires:
 - Scientific Python Stack (including NumPy, SciPy, Pandas. Can be obtained with Anaconda distribution)
-- Keras
+- Keras: The Python Deep Learning library, [link](https://keras.io)
 
 #
 Download:
