@@ -28,3 +28,11 @@ Requires:
 Download:
 
 The training and test datasets can be downloaded from [here](https://www.kaggle.com/c/noaa-fisheries-steller-sea-lion-population-count/data)
+
+
+#
+Other good approaches
+- AdaBoost, SSD: object detection for lions counting, [link](https://www.kaggle.com/c/noaa-fisheries-steller-sea-lion-population-count/discussion/35462)
+- UNet + regression on masksb, [link](https://www.kaggle.com/c/noaa-fisheries-steller-sea-lion-population-count/discussion/35422)
+- Real segmentation, [link](https://www.kaggle.com/c/noaa-fisheries-steller-sea-lion-population-count/discussion/35448)
+- Heatmap regression + segmentation, [link](https://www.kaggle.com/c/noaa-fisheries-steller-sea-lion-population-count/discussion/35465)
