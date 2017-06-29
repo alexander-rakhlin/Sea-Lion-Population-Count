@@ -4,6 +4,7 @@ Implements "Interactive Object Counting" by Arteta, Lempitsky, Noble, Zisserman
 # Reference
 
 - [Interactive Object Counting](https://www.robots.ox.ac.uk/~vgg/publications/2014/Arteta14/arteta14.pdf)
+- data sets used in the original paper can be obtained [here](http://www.robots.ox.ac.uk/~vgg/software/interactive_counting)
 """
 
 from os.path import join
