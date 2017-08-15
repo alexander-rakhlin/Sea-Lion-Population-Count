@@ -1,6 +1,6 @@
 # Sea Lion Population Count
 
-#### Quick overview of solution for Kaggle's [NOAA Fisheries Steller Sea Lion Population Count](https://www.kaggle.com/c/noaa-fisheries-steller-sea-lion-population-count/) (27th position of 393 teams)
+#### Quick overview of solution for Kaggle's [NOAA Fisheries Steller Sea Lion Population Count](https://www.kaggle.com/c/noaa-fisheries-steller-sea-lion-population-count/) (25th position of 393 teams)
 
 #
 My approach was started as gaussian density regression, similar to "Interactive Object Counting" by Arteta, Lempitsky, Noble, Zisserman, [link](https://www.robots.ox.ac.uk/~vgg/publications/2014/Arteta14/arteta14.pdf). Final model consists of 3 major parts:
